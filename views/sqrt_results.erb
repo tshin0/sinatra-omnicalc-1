@@ -2,11 +2,11 @@
 
 <dl>
   <dt>Number</dt>
-  <dd><%= params.fetch("users_num").to_i %></dd>
+  <dd><%= params.fetch("users_num").to_f %></dd>
 
-  <dt>Square</dt>
-  <dd><%= Math.sqrt(params.fetch("users_num").to_i) %></dd>
+  <dt>Square Root</dt>
+  <dd><%= Math.sqrt(params.fetch("users_num").to_f) %></dd>
 
 </dl>
 
-<a href="/square_root/new">Calculate square root again</a>
+<a href="/square_root/new">Calculate another square root</a>

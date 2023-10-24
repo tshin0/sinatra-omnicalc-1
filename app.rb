@@ -28,9 +28,9 @@ end
 get("/payment/results") do
   @apr = params.fetch("user_apr").to_f
   @years = params.fetch("user_years").to_i
-  @pv = params.fetch("user_pv").to_i
+  @pv = params.fetch("user_pv").to_f
 
-  @rate = @apr / 100
+  @rate = @apr / 100%
   @num_period = 12 * @years
   @payment_upper = @rate * @pv
   @payment_lower = 1- ((1+@rate) ** (@num_period * (-1)))
