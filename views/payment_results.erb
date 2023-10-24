@@ -1,0 +1,16 @@
+<h1>Payment Results</h1>
+
+<dl>
+  <dt>APR</dt>
+  <dd><%= params.fetch("user_apr").to_i %></dd>
+
+  <dt>Number of years</dt>
+  <dd><%= Math.sqrt(params.fetch("user_years").to_i) %></dd>
+
+  <dt>Principal</dt>
+  <dd><%= params.fetch("user_pv").to_i %></dd>
+
+  <dt>Payment</dt>
+  <dd><%= Math.sqrt(params.fetch("users_num").to_i) %></dd>
+
+<a href="/payment/new">Calculate another payment</a>

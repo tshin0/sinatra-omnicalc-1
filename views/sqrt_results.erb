@@ -1,0 +1,12 @@
+<h1>Square Root Results</h1>
+
+<dl>
+  <dt>Number</dt>
+  <dd><%= params.fetch("users_num").to_i %></dd>
+
+  <dt>Square</dt>
+  <dd><%= Math.sqrt(params.fetch("users_num").to_i) %></dd>
+
+</dl>
+
+<a href="/square_root/new">Calculate square root again</a>
